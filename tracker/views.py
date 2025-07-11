@@ -5,6 +5,10 @@ from django.http import JsonResponse
 from .models import Patient, Medicine, Purchase
 from .serializers import PatientSerializer, MedicineSerializer, PurchaseSerializer
 from django.http import JsonResponse
+from django.shortcuts import render
+
+def index(request):
+    return render(request, 'index.html')
 
 def home_view(request):
     return JsonResponse({'message': 'Medical Reminder API is live.'})

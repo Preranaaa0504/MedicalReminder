@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Reminder App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            background: #d4edda;
+            color: #155724;
+            border-radius: 5px;
+            border: 1px solid #c3e6cb;
+        }
+
+        .medical-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="medical-icon">🏥</div>
+        <h1>Medical Reminder</h1>
+        <p class="subtitle">Your Health, Our Priority</p>
+        
+        <div class="status">
+            ✅ Django Application is Running Successfully!
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>💊 Medication Reminders</h3>
+                <p>Never miss your medications with smart reminders</p>
+            </div>
+            <div class="feature-card">
+                <h3>📅 Appointment Scheduling</h3>
+                <p>Keep track of all your medical appointments</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Health Tracking</h3>
+                <p>Monitor your health progress over time</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <a href="#" class="btn">Get Started</a>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div style="margin-top: 30px; color: #666; font-size: 0.9em;">
+            <p>Welcome to your Medical Reminder Application</p>
+            <p>Built with Django • Deployed on Render</p>
+        </div>
+    </div>
+</body>
+</html>
