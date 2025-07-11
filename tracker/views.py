@@ -4,6 +4,11 @@ from django.contrib.auth import authenticate, login
 from django.http import JsonResponse
 from .models import Patient, Medicine, Purchase
 from .serializers import PatientSerializer, MedicineSerializer, PurchaseSerializer
+from django.http import JsonResponse
+
+def home_view(request):
+    return JsonResponse({'message': 'Medical Reminder API is live.'})
+
 
 # Admin login
 class LoginView(APIView):
