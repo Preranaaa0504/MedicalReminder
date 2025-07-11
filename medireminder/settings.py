@@ -82,6 +82,7 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'https://medicalreminder.onrender.com',  # Add your production URL
+    "https://your-vercel-project.vercel.app",
 ]
 
 # For development, you might want to allow all origins
